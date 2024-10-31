@@ -4,15 +4,15 @@ using namespace std;
 
 void calSum(int a, int b) {
     int sum = a + b;
-    cout << "Lukujen summa on: " << sum << "\n";
+    cout << "Lukujen summa on: " << sum << endl;
 }
 
 void calDiv(float a, float b) {
     if (b == 0) {
-        cout << "Virhe: Jakaja ei voi olla nolla!\n";
+        cout << "Virhe: Jakaja ei voi olla nolla" << endl;
     } else {
         float div = a / b;
-        cout << "Lukujen osamaara on: " << div << "\n";
+        cout << "Lukujen osamaara on: " << div << endl;;
     }
 }
 
@@ -23,7 +23,7 @@ int retSum(int a, int b) {
 
 float retDiv(float a, float b) {
     if (b == 0) {
-        cout << "Virhe: Jakaja ei voi olla nolla!\n";
+        cout << "Virhe: Jakaja ei voi olla nolla!" << endl;
         return 0.0f;
     }
     return a / b;
@@ -45,11 +45,11 @@ int main()
     calDiv(a, b);
 
     int summa = retSum(a, b);
-    cout << "Palautettu summa: " << summa << "\n";
+    cout << "Palautettu summa: " << summa << endl;
 
     float osamaara = retDiv(a, b);
     if (b != 0) {
-        cout << "Palautettu osamaara: " << osamaara << "\n";
+        cout << "Palautettu osamaara: " << osamaara << endl;
         return 0.0f;
     }
 }
