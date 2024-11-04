@@ -6,6 +6,7 @@ int main() {
     int num;
     int result;
     int n, k;
+
     cout << "Lasketaan kertoma!" << endl;
     cout << "Anna positiivinen kokonaisluku: " << endl;
     cin >> num;
