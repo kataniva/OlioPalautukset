@@ -13,7 +13,6 @@ int main()
     objCar.setYearModel(2008);
     objCar.printData();
 
-
     Rectangle *objRectangle=new Rectangle;
     objRectangle->setHeight(3);
     objRectangle->setWidth(6);
@@ -21,7 +20,6 @@ int main()
     cout << "Suorakulmion ymparysmitta=" << objRectangle->getCircum() << endl;
     delete objRectangle;
     objRectangle=nullptr;
-
 
     unique_ptr<Student> objStudent=make_unique<Student>();
     objStudent->setName("Teppo Testi");
