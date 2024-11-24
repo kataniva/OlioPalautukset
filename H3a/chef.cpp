@@ -1,26 +1,22 @@
 #include "chef.h"
 
-Chef::Chef(string name)
+Chef::Chef(string n)
 {
-    cout << name << " konstruktori" << endl;
-}
-
-void Chef::makeSalad()
-{
-    cout  << name << " makes salad" << endl;
-}
-
-void Chef::makeSoup()
-{
-      cout  << name << "makes salad" << endl;
+    name=n;
+    cout << name << " konstruktor" << endl;
 }
 
 Chef::~Chef()
 {
-    cout << name << " destruktori" << endl;
+    cout << name << " destruktor" << endl;
 }
 
-void Chef::setName(const string &newName)
+void Chef::makeSalad()
 {
-    name = newName;
+    cout << name << " make salad" << endl;
+}
+
+void Chef::makeSoup()
+{
+    cout << name << " make soup" << endl;
 }

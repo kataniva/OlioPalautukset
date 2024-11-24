@@ -3,16 +3,13 @@
 #include <iostream>
 using namespace std;
 
-
 class Chef
 {
 public:
-    Chef(string name);
+    Chef(string);
+    ~Chef();
     void makeSalad();
     void makeSoup();
-    ~Chef();
-    void setName(const string &newName);
-
 protected:
     string name;
 };
